@@ -12,6 +12,3 @@ class Book(BaseModel):
     author: Mapped[str] = mapped_column(String(100), nullable=False)
     year: Mapped[int]
     pages: Mapped[int]
-
-# mapped_column - нужен для указания параметров
-# nullable=False - пустым быть не может
